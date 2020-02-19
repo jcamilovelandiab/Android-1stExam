@@ -16,6 +16,7 @@
         android:layout_marginRight="36dp"
         android:layout_marginBottom="479dp"
         android:contentDescription="@string/name"
+        android:onClick="tomarfoto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +34,7 @@
         android:layout_marginRight="96dp"
         android:layout_marginBottom="187dp"
         android:contentDescription="@string/name"
+        android:onClick="tomarfoto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,4 +56,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

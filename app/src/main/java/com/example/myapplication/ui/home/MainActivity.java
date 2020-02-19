@@ -53,8 +53,6 @@ public class MainActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA}, 1000);
         }
 
-
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         // This method sets the toolbar as the app bar for the activity
         setSupportActionBar(toolbar);
@@ -86,8 +84,6 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-
-
     }
 
     String currentPhotoPath;
@@ -110,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
     static final int REQUEST_TAKE_PHOTO = 1;
 
-    private void tomarfoto(View view) {
+    public void tomarfoto(View view) {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         // Ensure that there's a camera activity to handle the intent
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
@@ -142,11 +138,6 @@ public class MainActivity extends AppCompatActivity {
             img.setImageBitmap(imageBitmap);
         }
     }
-
-
-
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
