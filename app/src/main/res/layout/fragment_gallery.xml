@@ -91,14 +91,13 @@
 
         <LinearLayout
             android:id="@+id/linearLayout3"
-            android:layout_width="409dp"
-            android:layout_height="137dp"
+            android:layout_width="399dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
             android:layout_marginLeft="1dp"
             android:layout_marginTop="1dp"
             android:layout_marginEnd="1dp"
             android:layout_marginRight="1dp"
-            android:layout_marginBottom="1dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -110,14 +109,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/btnsiguiente"
-                android:text="@string/siguiente" />
+                android:text="@string/action_next" />
 
             <Button
-                android:id="@+id/btnatras"
+                android:id="@+id/gallery_btn_back"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/btnsalir"
-                android:text="@string/atras" />
+                android:text="@string/action_back" />
         </LinearLayout>
 
         <LinearLayout
@@ -159,8 +158,8 @@
             android:layout_marginStart="139dp"
             android:layout_marginLeft="139dp"
             android:layout_marginTop="32dp"
-            android:text="@string/imagenes"
-            android:textSize="30sp"
+            android:text="@string/gallery_title"
+            android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.07"
             app:layout_constraintStart_toStartOf="parent"
@@ -170,16 +169,16 @@
             android:id="@+id/imageView15"
             android:layout_width="191dp"
             android:layout_height="156dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="50dp"
             android:layout_marginBottom="38dp"
+            android:contentDescription="@string/todo4"
             android:src="@drawable/cat"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.58"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.32999998"
-            android:contentDescription="@string/todo4" />
+            app:layout_constraintVertical_bias="0.32999998" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

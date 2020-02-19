@@ -15,8 +15,13 @@
     <string name="female">Female</string>
     <string name="gender">Choose your gender</string>
 
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+
     <string name="home_title">My Profile</string>
     <string name="result_form_title">Confirmation</string>
+    <string name="gps_title">Your location</string>
+    <string name="gallery_title">Pictures</string>
 
     <string name="action_back">BACK</string>
     <string name="action_next">NEXT</string>
