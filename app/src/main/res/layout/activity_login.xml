@@ -89,8 +89,8 @@
 
     <LinearLayout
         style="?android:attr/buttonBarStyle"
-        android:layout_width="339dp"
-        android:layout_height="142dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="48dp"
@@ -115,18 +115,11 @@
 
         <Button
             style="?android:attr/buttonBarButtonStyle"
-            android:id="@+id/login_btn_signup"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:enabled="true"
-            android:text="@string/action_sign_up" />
-
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/login_btn_exit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/action_exit" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

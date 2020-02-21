@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.ui.gps.GpsActivity">
+    tools:context=".ui.gps.GpsActivity">
 
     <TextView
         android:id="@+id/gps_tv_title"
@@ -16,19 +16,20 @@
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         android:text="@string/gps_title"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="245dp"
-        android:layout_height="186dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="260dp"
         android:layout_marginEnd="80dp"
         android:layout_marginRight="80dp"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,23 +39,20 @@
             android:id="@+id/gps_tv_latitude"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="20sp" />
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/gps_tv_longitude"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="20sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
     <LinearLayout
         style="?android:attr/buttonBarStyle"
         android:layout_width="298dp"
         android:layout_height="0dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="240dp"
+        android:layout_marginBottom="50dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,13 +67,22 @@
             android:text="@string/action_back" />
 
         <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/gps_btn_see_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/gps_btn_see_map" />
+
+        <Button
             android:id="@+id/gps_btn_next"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:enabled="false"
             android:text="@string/action_next" />
+
+
 
     </LinearLayout>
 

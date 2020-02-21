@@ -5,9 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -25,12 +23,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
-import com.example.myapplication.ui.home.MainActivity;
-import com.example.myapplication.ui.signup.SignupActivity;
+import com.example.myapplication.ui.form.FormActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
+
+    EditText emailEditText, passwordEditText;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,10 +38,9 @@ public class LoginActivity extends AppCompatActivity {
 
         loginViewModel = ViewModelProviders.of(this, new LoginViewModelFactory()).get(LoginViewModel.class);
 
-        final EditText emailEditText = findViewById(R.id.email);
-        final EditText passwordEditText = findViewById(R.id.password);
+        emailEditText = findViewById(R.id.email);
+        passwordEditText = findViewById(R.id.password);
         final Button loginButton = findViewById(R.id.login_btn_signin);
-        final Button signupButton = findViewById(R.id.login_btn_signup);
         final Button exitButton = findViewById(R.id.login_btn_exit);
         final ProgressBar loadingProgressBar = findViewById(R.id.loading);
 
@@ -125,13 +123,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        signupButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), SignupActivity.class);
-                startActivity(intent);
-            }
-        });
 
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -145,15 +136,14 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void updateUiWithUser(LoggedInUserView model) {
-        SharedPreferences.Editor sharedPref =
-                getSharedPreferences( getString( R.string.preference_file_key), Context.MODE_PRIVATE ).edit();
-        sharedPref.putString("TOKEN_KEY", model.getToken());
 
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, FormActivity.class);
+        intent.putExtra("email", emailEditText.getText().toString());
         startActivity(intent);
         String welcome = getString(R.string.welcome) + model.getDisplayName()+" !";
         // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
+
     }
 
 

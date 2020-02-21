@@ -20,7 +20,6 @@
 
     <string name="home_title">My Profile</string>
     <string name="result_form_title">Confirmation</string>
-    <string name="gps_title">Your location</string>
     <string name="gallery_title">Pictures</string>
 
     <string name="action_back">BACK</string>
@@ -53,10 +52,18 @@
     <string name="menu_internet">Internet</string>
     <string name="menu_gps">GPS</string>
     <string name="menu_credits">Credits</string>
+    <string name="menu_form">Information</string>
+
+    <string name="gps_title">Your location</string>
+    <string name="form_title">Information</string>
+
     <string name="menu_anterior">Regresar</string>
     <string name="menu_salir">Salir</string>
+
     <string name="btnsalir">Salir</string>
     <string name="btnsiguiente">Siguiente</string>
+
+    <string name="gps_btn_see_map">SEE MAP</string>
 
     <string-array name="countries_array">
         <item>Colombia</item>
@@ -84,5 +91,14 @@
     <string name="todo5">TODO</string>
     <string name="todo6">TODO</string>
     <string name="tomar_foto_y_visualiza">TOMAR FOTO Y VISUALIZA</string>
+    <string name="todo">TODO</string>
+    <string name="open_camera">open camera</string>
+
+
+    <string name="author_one">Juan Camilo Velandia Botello</string>
+    <string name="author_two">Arantza Reveles Nieto</string>
+    <string name="author_three">Juan Jose Hernandez Arreola</string>
+    <string name="professor">Rocio Elizabeth Pulido Alba</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

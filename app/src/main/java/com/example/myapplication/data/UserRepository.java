@@ -55,7 +55,6 @@ public class UserRepository {
         }else{
             return new LoggedInUser(u.getEmail(),token);
         }
-
     }
 
 }
